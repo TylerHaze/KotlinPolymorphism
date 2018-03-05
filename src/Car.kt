@@ -11,7 +11,7 @@ class Car constructor(fuelTank: Int, numCylinders: Int, condition: Int){
             parts[i].status()
             println("/////////////////")
         }
+        engine.lowerCondition()
+        fuel.lowerCondition()
     }
-
-
 }
