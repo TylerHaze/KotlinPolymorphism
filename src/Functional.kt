@@ -1,0 +1,3 @@
+interface Functional {
+    fun function()
+}
