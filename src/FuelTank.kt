@@ -1,11 +1,11 @@
-class FuelTank constructor(capacity: Int, condition: Int) : CarPart(capacity)
+class FuelTank constructor(capacity: Int, condition: Int) : CarPart(condition)
 {
     var capacity = capacity
-    override fun function() {
-        println("\nMy capacity is: ${capacity}.")
-    }
 
-    open override fun status() {
-        println("\nI'm a salvaged fuel tank. I only have ${condition} health.")
+    override fun function() {
+        println("\nMy capacity is: ${capacity}mpg.")
+    }
+    override fun status() {
+            println("\nI'm a healthy fuel tank. I have $condition health.")
     }
 }
